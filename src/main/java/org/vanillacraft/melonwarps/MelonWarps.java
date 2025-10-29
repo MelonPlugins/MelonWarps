@@ -7,11 +7,12 @@ import io.papermc.paper.command.brigadier.Commands;
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.world.WorldSaveEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
-public final class MelonWarps extends JavaPlugin {
+public final class MelonWarps extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
