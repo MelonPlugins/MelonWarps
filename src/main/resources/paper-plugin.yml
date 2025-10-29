@@ -1,0 +1,44 @@
+name: MelonWarps
+version: '0.1.0'
+main: org.vanillacraft.melonwarps.MelonWarps
+api-version: '1.21'
+prefix: MelonWarps
+authors: [ Dylan <opendylan@proton.me> ]
+description: The ultimate warp plugin for vanilla-style servers, without forcing teleportation
+website: https://hangar.papermc.io/Melon
+
+commands:
+  warp:
+    description: "Locate a warp in the world from its name"
+    usage: "/warp <warpName>"
+    aliases: ["warp", "locatewarp"]
+    permission: melon.warps.warp
+  warps:
+    description: "List all server warps"
+    usage: "/warps"
+    aliases: ["warps", "listwarps"]
+    permission: melon.warps.warps
+  setwarp:
+    description: "Create a public warp"
+    usage: "/setwarp <warpName>"
+    aliases: ["warp", "locatewarp"]
+    permission: melon.warps.setwarp
+  delwarp:
+    description: "Delete a warp"
+    usage: "/delwarp <warpName>"
+    aliases: ["warp", "locatewarp"]
+    permission: melon.warps.delwarp
+
+permissions:
+  melon.warps.warp:
+    description: "Permission for Melon's /warp command"
+    default: true
+  melon.warps.warps:
+    description: "Permission for Melon's /warps command"
+    default: true
+  melon.warps.setwarp:
+    description: "Permission for Melon's /setwarp command"
+    default: op
+  melon.warps.delwarp:
+    description: "Permission for Melon's /delwarp command"
+    default: op
