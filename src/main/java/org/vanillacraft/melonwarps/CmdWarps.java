@@ -9,7 +9,6 @@ public class CmdWarps {
     public static int execute(CommandContext<CommandSourceStack> ctx) {
         StringBuilder msg = new StringBuilder("[Melon] Warps: ");
         for (String warpName : WarpMap.warpMap.keySet()) {
-            Warp warp = WarpMap.warpMap.get(warpName);
             msg.append(warpName).append(", ");
         }
         msg.delete(msg.length() - 2, msg.length());
