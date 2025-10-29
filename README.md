@@ -6,9 +6,6 @@
 > - [MelonPlugins on Hangar](https://hangar.papermc.io/Melon)
 > - [MelonPlugins documentation](https://dylancode.dev/docs/melon)
 
-MelonMessages allows you to easily configure different logging messages sent to
-your server's chat, as well as change their color.
-
 MelonWarps allows you to create vanilla-style warps - waypoints to public
 locations, **without** ruining the fun of vanilla transport by allowing players
 to teleport everywhere.
